@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Moonrocks&family=Titillium+Web:wght@200;300&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Titillium Web', sans-serif;
+}
+ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    border-radius: 20px;
+}
+ul img{
+    border-radius: 20px;
+    border: solid rgb(234, 140, 73);
+}
+.menu nav a:hover{
+    color: rgb(97, 6, 97);
+    font-size: 20px;
+}
+h3:hover{
+    color: #cb5b00;
+    font-size: 20px;
+}
+.container {
+    max-width: 1080px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+header{
+    background-color: rgb(244, 213, 175);
+    width: 100%;
+    padding: 20px;
+}
+
+.container img {
+    max-width:200px;
+    max-height:150px;
+    width: auto;
+    height: auto;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.logo,.sociais{
+    width: 25%;
+
+}
+.logo img{
+    width: 200px;
+}
+
+h1{
+    color: #c4600e;
+
+}
+h1:hover{
+    color: black;
+    font-size: 40px;
+}
+.menu{
+    width: 50%;
+}
+.menu nav a{
+    color: rgb(69, 12, 123);
+    text-decoration: none;
+    padding-right: 50px;
+    font-size: 18px;
+    position: relative;
+}
+.menu nav a::after{
+    content: " ";
+    width: 0px;
+    height: 4px;
+    background-image: linear-gradient(45deg, #ff2500, #ff7100);
+    position: absolute;
+    top: 30px;
+    left: 0;
+    transition: width 0.5s;
+}
+.menu nav a:hover::after{
+    width: 30px;
+}
+.sociais button{
+    width: 40px;
+    height: 40px;
+    background-image: linear-gradient(45deg, #ff2500, #ff7100);
+    border: none;
+    margin-right: 10px;
+    border-radius: 8px;
+    cursor: pointer;
+
+}
+.sociais button i{
+    font-size: 20px;
+    color: azure;
+}
+@media (max-width:700px) {
+    ul{
+        flex-direction: column;
+        display: flex;
+        padding-left: 30px;
+    }
+    .menu nav a {
+        flex-direction: column;
+        display: flex;
+        padding-left: 30px;
+    }
+    header{
+        flex-direction: column;
+    }
+    .logo img{
+        display: none;
+    }
+}
